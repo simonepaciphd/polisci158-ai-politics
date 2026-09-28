@@ -17,11 +17,14 @@ hidden elsewhere. On GitHub Pages this script turns each hidden button into a vi
 next to the page, keeping the button's label. It also adds one "<- Session decks" link above the layout. Nothing else
 changes: the script undoes both edits in memory and fails unless the result equals the source guide byte for byte.
 """
-import hashlib, html, io, json, pathlib, re, shutil, sys, zipfile
+import hashlib, html, io, json, os, pathlib, re, shutil, sys, zipfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "project"
-PKG = pathlib.Path(r"C:\Users\spaci\Dropbox\Teaching\POLISCI 158 - Politics and AI\Assignments\final-project")
+PKG_ENV = "POLISCI158_PACKAGE"  # path to <course>/Assignments/final-project, set locally
+if not os.environ.get(PKG_ENV):
+    sys.exit(f"stage_project: set {PKG_ENV} to the course's Assignments/final-project folder")
+PKG = pathlib.Path(os.environ[PKG_ENV])
 SRC_HTML = PKG / "polisci158-final-project-guide.html"
 SRC_ZIP = PKG / "polisci158-final-project-package.zip"
 ZIP_FOLDER = "final-project/"

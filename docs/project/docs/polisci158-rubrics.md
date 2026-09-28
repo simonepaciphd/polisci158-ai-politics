@@ -20,13 +20,13 @@ Each graded part of the project has a rubric below. Each criterion is scored on 
 | **Question** | Specific and answerable; who, where, when, and what outcome are clear; doesn't assume its answer | A real question, but still broad or vague in one dimension | A topic rather than a question, or the answer is built in |
 | **Motivation** | At least one concrete reason (a number, a named gap, a named audience); passes "so what?" | Reasons given, but generic ("this is important") | No clear reason why the question matters |
 | **Feasibility** | Sources, tools, or cases named, access checked, a realistic plan; biggest risk and plan B identified | Plan named, but access untested or the scope is ambitious for ten weeks | No clear plan for the evidence, or clearly not doable this quarter |
-| **Fit with the course** | Clearly about using AI on a political or social challenge, or studying AI's effect on one; engages at least one track | Connection to the course is there but thin | Weak connection to AI and politics |
+| **Fit with the course** | Clearly about AI's effect on a political or social challenge; engages at least one track | Connection to the course is there but thin | Weak connection to AI and politics |
 
 **Partners: work-sharing contract.** It isn't scored, but it has to be accepted. It's accepted when every major step has a role for both partners and there's a realistic plan for working together. If steps are missing, or whole steps go to one partner, it's returned for revision.
 
 ## Implementation milestone (10%)
 
-*Syllabus: design, evidence, or build progress; what has actually been done.*
+*Design and evidence progress; what has actually been done.*
 
 | Criterion | Strong (2) | Developing (1) | Weak (0) |
 |---|---|---|---|

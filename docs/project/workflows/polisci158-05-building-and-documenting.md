@@ -1,6 +1,6 @@
 # Workflow 05 — Doing the work, and documenting it (implementation milestone)
 
-**When:** weeks 5–8, before Sun, Nov 15. **Feeds:** the **implementation milestone**, 800–1000 words (shorter for 4 or 3 units): *design, evidence, or build progress — what has actually been done.*
+**When:** weeks 5–8, before Sun, Nov 15. **Feeds:** the **implementation milestone**, 800–1000 words (shorter for 4 or 3 units): *design and evidence progress — what has actually been done.*
 
 ## Goal
 

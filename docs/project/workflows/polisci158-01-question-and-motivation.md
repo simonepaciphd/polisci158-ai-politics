@@ -15,7 +15,7 @@ Turn a topic you care about ("AI and misinformation," "data centers") into **one
 
 ## Steps
 
-1. **You.** Name the challenge in one sentence, e.g. "City councils are deciding on data-center permits without good information about water use." Then pick your angle: are you *using AI on* this challenge, or *studying AI's effect on* it?
+1. **You.** Name the challenge in one sentence, e.g. "City councils are deciding on data-center permits without good information about water use." Then say what you want to know about AI's effect on it.
 2. **You.** Write a first draft of your question. It doesn't have to be good yet.
 3. **With AI.** Sharpen it. Paste in your challenge and your draft question:
 
@@ -62,4 +62,4 @@ If the AI suggested a framing you adopted, note it in your AI-use note.
 - **Taking the AI's version as is.** Its suggestions are options. The question you pick has to be one you understand and care about.
 
 ---
-*Course framing (use AI on vs. study AI's effect on) from the POLISCI 158 syllabus, Project-Based Assessments.*
+*Course framing adapted from the POLISCI 158 syllabus, Project-Based Assessments.*

@@ -14,7 +14,7 @@ Everything below is practical guidance on following that rule. If anything here 
 | Brainstorming and stress-testing your question, design, or argument | Allowed, disclose if substantive | The AI can suggest options; you choose. Use the prompts in the workflows                   |
 | Working material: code, analyses, results memos, notes, session summaries | **Allowed**, disclose      | The AI can draft these. Check what it produces                                             |
 | Finding source leads                                                | Allowed, disclose                | Verify every source yourself; see below                                                    |
-| **The text you submit** (proposal, milestone, final, peer reviews)  | **Must be your own ideas**       | AI may help preliminary draft; it may review your draft; it may not generate the full text |
+| **The text you submit** (proposal, milestone, final, peer reviews)  | **Must be your own ideas**       | AI may help with preliminary and intermediate output, and it may review your draft; you are responsible for every word you submit |
 | Slides and presentation practice                                    | Allowed, disclose if substantive | You deliver the talk yourself                                                              |
 
 ## Suggested practices

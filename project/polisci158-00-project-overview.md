@@ -2,7 +2,7 @@
 
 ## The project in one paragraph
 
-You pick a **concrete social or political challenge** and build a project around it. Either **use AI on that challenge** (a tool, a pipeline, an audit, an analysis) or **study AI's effect on it** (its political, institutional, or distributive consequences). The project can be **theoretical, empirical, or argumentative**. It can draw on either course track, the Monday politics track or the Wednesday tech track. The strongest projects usually draw on both. You choose your own topic; `workflows/polisci158-03-choosing-your-design.md` lists some example projects to get you started.
+You pick a **concrete social or political challenge** and **study AI's effect on it**: its political, institutional, or distributive consequences. The project can be **theoretical, empirical, or argumentative**. It can draw on either course track, the Monday politics track or the Wednesday tech track. The strongest projects usually draw on both. You choose your own topic; `workflows/polisci158-03-choosing-your-design.md` lists some example projects to get you started.
 
 ## Working alone or with a partner
 
@@ -34,7 +34,7 @@ Deadlines are 11:59 p.m. unless stated.
 |---|---|---|---|
 | **Proposal milestone** | Sun, Oct 11 | Motivate the project; explain feasibility (plus a work-sharing contract if you have a partner) | 300–500 words |
 | Peer Review 1 | Sun, Oct 18 | Written feedback on one classmate's proposal | 150–200 words |
-| **Implementation milestone** | Sun, Nov 15 | Design, evidence, or build progress: what has *actually* been done | 800–1000 words |
+| **Implementation milestone** | Sun, Nov 15 | Design and evidence progress: what has *actually* been done | 800–1000 words |
 | Peer Review 2 | Sun, Nov 22 | Written feedback on one classmate's milestone | 150–200 words |
 | **Final presentation** | Mon, Nov 30 / Wed, Dec 2 | Themed panel presentation and Q&A | 5 minutes; about 5–7 slides |
 | Peer Review 3 | In session, Nov 30 / Dec 2 | Structured feedback on a panel peer | 150–200 words |

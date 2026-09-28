@@ -27,7 +27,7 @@ Argumentative projects: organize around your criteria and the strongest objectio
 
 ## Steps
 
-The write-up you submit must be in your own words. AI can help you plan it and review it, but it can't write it. Anything it restyles or rewrites that you keep must be disclosed.
+The write-up you submit must be in your own words. AI can help with preliminary and intermediate output, such as a plan, a rough draft or a review, but you are responsible for every word you submit. Anything it restyles or rewrites that you keep must be disclosed.
 
 1. **With AI.** Explore ways to organize your material:
 

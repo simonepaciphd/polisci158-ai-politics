@@ -9,6 +9,7 @@ Site: https://simonepaciphd.github.io/polisci158-ai-politics/ (GitHub Pages, ser
 sessions/sNN-slug.md    one file per session, the only content source (template: sessions/_TEMPLATE.md)
 build.py                sessions/ -> docs/ (public) or _preview/ (--preview, drafts included)
 check_links.py          checks every external link; run before each publish
+tools/stage_project.py  project/ from the final-project package (set POLISCI158_PACKAGE to its folder first)
 docs/                   generated site; do not edit by hand
 ```
 

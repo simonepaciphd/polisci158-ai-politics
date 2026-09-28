@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Session guide: the politics track · POLISCI 158</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;family=Source+Serif+4:wght@400;600&amp;display=swap">
+<style>
+:root { --bg:#fbf8f4; --surface:#ffffff; --fg:#161719; --muted:#62666c; --line:#e8e1da; --accent:#8c1515; --accent-soft:#f3e6e6; color-scheme:light;
+  --font-heading:"Source Serif 4", Georgia, serif;
+  --font-body:"Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#16181b; --surface:#1f2226; --fg:#e6e8eb; --muted:#9aa3ad; --line:#30353b; --accent:#e0858a; --accent-soft:#3a2324; color-scheme:dark; } }
+:root[data-theme="dark"] { --bg:#16181b; --surface:#1f2226; --fg:#e6e8eb; --muted:#9aa3ad; --line:#30353b; --accent:#e0858a; --accent-soft:#3a2324; color-scheme:dark; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 var(--font-body); padding-inline:16px; -webkit-text-size-adjust:100%; }
+h1, h2, h3 { line-height:1.25; text-wrap:balance; }
+h1, h2 { font-family:var(--font-heading); font-weight:600; }
+h1 { font-size:2rem; margin:0 0 1rem; }
+h2 { font-size:1.4rem; margin:2.25rem 0 .75rem; }
+h3 { font-weight:600; font-size:1.08rem; margin:1.5rem 0 .5rem; }
+a { color:var(--accent); text-underline-offset:.15em; }
+:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+li { margin:.4rem 0; }
+.layout { display:grid; grid-template-columns:16rem minmax(0, 44rem); column-gap:3rem; justify-content:center; padding-block:2rem 4rem; }
+main { min-width:0; }
+.site { grid-column:1 / -1; border-bottom:1px solid var(--line); padding-bottom:1rem; margin-bottom:2rem; }
+.site p { margin:0; }
+.site p:first-child a { color:var(--muted); font-size:.85rem; letter-spacing:.04em; text-decoration:none; }
+.site-title { font-family:var(--font-heading); font-size:1.5rem; font-weight:600; margin-top:.2rem !important; }
+.banner { margin-top:.75rem !important; padding-left:.75rem; border-left:3px solid var(--accent); }
+.layout > nav { position:sticky; top:1rem; align-self:start; max-height:calc(100vh - 2rem); overflow-y:auto; }
+nav ul { list-style:none; margin:0; padding:0; }
+nav li { margin:0; }
+nav li a, nav li span { display:block; padding:.3rem 0 .3rem .75rem; border-left:2px solid transparent; color:var(--fg); text-decoration:none; font-size:.95rem; line-height:1.35; }
+nav li a:hover { color:var(--accent); }
+nav li a[aria-current="page"] { color:var(--accent); border-left-color:var(--accent); font-weight:600; }
+.muted, nav li span.muted { color:var(--muted); }
+.nav-group { margin:0 0 .35rem; font-size:.75rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+.kicker { margin:0 0 .25rem; color:var(--muted); font-size:.9rem; letter-spacing:.03em; }
+.table-wrap { overflow-x:auto; margin:1rem 0 1.5rem; }
+table { border-collapse:collapse; width:100%; font-size:.95rem; }
+th, td { padding:.5rem .65rem; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); }
+thead th { background:var(--surface); font-weight:600; }
+.pager { display:flex; justify-content:space-between; gap:1rem; margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); }
+.pager a { font-weight:600; text-decoration:none; }
+.pager .next { margin-left:auto; text-align:right; }
+.provenance { margin-top:2rem; color:var(--muted); font-size:.88rem; }
+@media (max-width: 899px) {
+  body { font-size:16px; }
+  .layout { grid-template-columns:minmax(0, 1fr); padding-block:1.25rem 3rem; }
+  .layout > nav { position:static; max-height:none; order:3; border-top:1px solid var(--line); margin-top:2.5rem; padding-top:1rem; }
+  .site { margin-bottom:1.5rem; }
+  nav li a, nav li span { padding-block:.6rem; }
+  .pager { flex-direction:column; gap:.75rem; }
+  .pager .next { margin-left:0; text-align:left; }
+}
+@media print {
+  :root, :root:not([data-theme="light"]), :root[data-theme="dark"] { --bg:#fbf8f4; --surface:#ffffff; --fg:#161719; --muted:#62666c; --line:#e8e1da; --accent:#8c1515; --accent-soft:#f3e6e6; color-scheme:light; }
+  .layout { display:block; } .layout > nav, .pager { display:none; }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+<header class="site">
+<p><a href="index.html">POLISCI 158 · AI &amp; Politics · Stanford · Fall 2026</a></p>
+<p class="site-title">Session guide: the politics track</p>
+
+</header>
+<nav aria-label="Sessions">
+<p class="nav-group">Sessions</p>
+<ul>
+<li><span class="muted">1 · Introduction</span></li>
+<li><a href="s02.html">2 · Demand Side I: Labor Markets, Productivity, and Automation</a></li>
+<li><span class="muted">4 · Demand Side II: Firms, Platforms, and Lobbying</span></li>
+<li><span class="muted">6 · Demand Side III: Public Opinion and the Information Environment</span></li>
+<li><span class="muted">8 · Supply Side I: Politicians, Campaigns, and Elections</span></li>
+<li><span class="muted">10 · Supply Side II: Public Institutions and Governance Capacity</span></li>
+<li><span class="muted">12 · Data Centers</span></li>
+<li><span class="muted">14 · US–China Competition</span></li>
+<li><span class="muted">16 · AI Sovereignty</span></li>
+</ul>
+</nav>
+<main>
+<h1>Session guide: the politics track</h1>
+<p>One slide deck per session of the politics track of POLISCI 158. Before class, each deck lists what to
+read, listen to, or explore. After class, it adds the key takeaways and places to go further. Decks appear as the
+quarter goes on; use the arrow keys or swipe to move through the slides.</p>
+<p class="project-link"><a href="project/index.html">Final project guide →</a></p>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>Date</th><th>Session</th><th>Status</th></tr></thead><tbody>
+<tr><td>1</td><td>Wed, Sep 23</td><td>Introduction</td><td>coming soon</td></tr>
+<tr><td>2</td><td>Mon, Sep 28</td><td><a href="s02.html">Demand Side I: Labor Markets, Productivity, and Automation</a></td><td>Prep available</td></tr>
+<tr><td>4</td><td>Mon, Oct 5</td><td>Demand Side II: Firms, Platforms, and Lobbying</td><td>coming soon</td></tr>
+<tr><td>6</td><td>Mon, Oct 12</td><td>Demand Side III: Public Opinion and the Information Environment</td><td>coming soon</td></tr>
+<tr><td>8</td><td>Mon, Oct 19</td><td>Supply Side I: Politicians, Campaigns, and Elections</td><td>coming soon</td></tr>
+<tr><td>10</td><td>Mon, Oct 26</td><td>Supply Side II: Public Institutions and Governance Capacity</td><td>coming soon</td></tr>
+<tr><td>12</td><td>Mon, Nov 2</td><td>Data Centers</td><td>coming soon</td></tr>
+<tr><td>14</td><td>Mon, Nov 9</td><td>US–China Competition</td><td>coming soon</td></tr>
+<tr><td>16</td><td>Mon, Nov 16</td><td>AI Sovereignty</td><td>coming soon</td></tr>
+</tbody></table></div>
+<p class="provenance">Curated by Simone Paci, Stanford University. Drafted with AI assistance (Claude) from the instructor's course materials and reviewed by the instructor before publication; every external link is checked before each update.</p>
+</main>
+</div>
+</body>
+</html>

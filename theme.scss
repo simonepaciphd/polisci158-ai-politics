@@ -1,0 +1,65 @@
+/*-- scss:defaults --*/
+// Modeled on the POLISCI 157 Stanford deck (theme colors taken from its theme1.xml), made cleaner:
+// no background pattern, one serif + one sans, more white space. Single light theme by design.
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap");
+
+$cardinal: #8c1515;
+$ink: #2e2c28;
+$band: #e7e6e6;
+$rule: #cfcac4;
+$muted: #6b6760;
+$teal: #007c92;
+
+$body-bg: #ffffff;
+$body-color: $ink;
+$link-color: $teal;
+$selection-bg: #f3e6e6;
+$presentation-heading-color: $cardinal;
+$presentation-heading-font: "Source Serif 4", Georgia, "Times New Roman", serif;
+$presentation-heading-font-weight: 400;
+$presentation-heading-line-height: 1.15;
+$presentation-heading-text-transform: none;
+$presentation-heading-letter-spacing: 0;
+$font-family-sans-serif: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+$presentation-font-size-root: 32px;
+$presentation-h1-font-size: 2.2em;
+$presentation-h2-font-size: 1.55em;
+$presentation-h3-font-size: 1.1em;
+
+/*-- scss:rules --*/
+.reveal, .reveal .slides { font-family: $font-family-sans-serif; font-variant-numeric: tabular-nums; }
+.reveal .slides h1, .reveal .slides h2, .reveal .slides h3 { font-family: $presentation-heading-font; }
+.reveal h1, .reveal h2 { text-wrap: balance; }
+
+// content slides: heading top-left, as in 157
+.reveal .slides section:not(.title-slide):not(.section) > h2 { margin-bottom: .7em; }
+.reveal .slide ul { width: 100%; margin-left: 0; }
+.reveal .slide li { margin: .4em 0; line-height: 1.35; }
+.reveal .slide li::marker { color: $cardinal; }
+.reveal .slide a { text-underline-offset: .15em; }
+.reveal .slide strong a { font-weight: 600; }
+.reveal .dense li { font-size: .8em; margin: .3em 0; }
+
+// cardinal full-bleed title and section slides (background set per slide in the .qmd)
+.reveal .title-slide h1, .reveal .title-slide .subtitle, .reveal .title-slide .author,
+.reveal .title-slide p, .reveal section.section h1 { color: #ffffff; }
+.reveal .title-slide h1.title { font-size: 2em; margin-bottom: .3em; }
+.reveal .title-slide .subtitle { font-family: $font-family-sans-serif; font-size: .85em; font-weight: 400; opacity: .92; }
+.reveal .title-slide .quarto-title-author-name { font-family: $font-family-sans-serif; font-size: .7em; letter-spacing: .02em; opacity: .85; }
+.reveal .title-slide .draft { display: inline-block; margin-top: 1.2em; padding: .2em .6em; border: 1px solid rgba(255,255,255,.7); font-size: .55em; color: #ffffff; }
+.reveal section.section h1 { font-size: 2.1em; }
+
+// roadmap: grey band with cardinal serif numerals, as in 157
+.reveal .roadmap ol { list-style: none; counter-reset: step; margin: 0 -1.1em; padding: .6em 1.1em; background: $band; width: calc(100% + 2.2em); }
+.reveal .roadmap ol li { counter-increment: step; display: flex; align-items: baseline; gap: 1.6em; margin: .55em 0; font-size: 1.05em; }
+.reveal .roadmap ol li::before { content: counter(step); flex: 0 0 1.2em; font-family: $presentation-heading-font; font-size: 1.5em; color: $cardinal; text-align: center; }
+
+// footer: thin rule with the wordmark at left and the slide number at right
+.reveal .footer { display: block !important; left: 64px !important; right: 110px !important; bottom: 12px !important; width: auto !important; text-align: left !important; border-top: 1px solid $rule; padding-top: 6px; font-family: $presentation-heading-font; font-size: .5em; color: $cardinal; }
+.reveal .footer a { color: $cardinal; text-decoration: none; }
+.reveal .slide-number { right: 40px !important; bottom: 14px !important; background: transparent; color: $muted; font-family: $font-family-sans-serif; font-size: .45em; }
+.reveal .title-slide ~ .footer, .reveal.has-dark-background .footer { border-top-color: rgba(255,255,255,.5); }
+.reveal.has-dark-background .footer, .reveal.has-dark-background .footer a, .reveal.has-dark-background .slide-number { color: #ffffff; }
+
+.reveal .provenance { color: $muted; font-size: .6em; }
+.reveal .pager { display: flex; justify-content: space-between; gap: 1em; font-size: .7em; margin-top: 1.4em; border-top: 1px solid $rule; padding-top: .6em; }

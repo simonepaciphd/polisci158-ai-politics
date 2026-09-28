@@ -47,7 +47,7 @@ RESTRICTED = [
 ]
 PLACEHOLDERS = [r"example\.org", r"Session title as in", r"Question one", r"What to look for\.", r"Two to four sentences"]
 
-UI = {"contents": "Sessions", "soon": "coming soon", "prep": "Prep available", "reviewed": "Prep and review",
+UI = {"contents": "Sessions", "soon": "coming soon", "prep": "prep", "reviewed": "prep and review",
       "draft_banner": "Preview only. This deck is a draft and is not published.",
       "draft_short": "Draft preview, not published",
       "project": "Final project guide →",
@@ -301,12 +301,18 @@ def main():
                 errors.append(f'{s["file"]}: quarto produced no {out_html.name}')
     rendered = {}
 
-    rows = []
+    rows, slide_files = [], []
     for s in sessions:
         m, st = s["meta"], s["meta"]["status"]
         title = html.escape(m["title"])
-        link = f'<a href="{s["slug"]}.html">{title}</a>' if s["slug"] in shown_slugs else title
-        state = UI[st] if st in PUBLIC else ("draft (preview)" if preview and not s.get("stub") else UI["soon"])
+        slides = f'slides/{s["slug"]}-slides.html'   # class slides (speaker notes stripped), optional per session
+        has_slides = s["slug"] in shown_slugs and (ROOT / slides).exists()
+        if has_slides:
+            slide_files.append(slides)
+        link = (f'<a href="{slides}">{title}</a>' if has_slides
+                else f'<a href="{s["slug"]}.html">{title}</a>' if s["slug"] in shown_slugs else title)
+        state = (f'<a href="{s["slug"]}.html">{UI[st]}</a>' if st in PUBLIC
+                 else "draft (preview)" if preview and not s.get("stub") else UI["soon"])
         rows.append(f"<tr><td>{s['n']}</td><td>{when(m['date'])}</td><td>{link}</td><td>{state}</td></tr>")
     # the project guide goes public only once Simone approves it: an empty project/PUBLISH marker; previews always show it
     has_project = (ROOT / "project" / "index.html").exists() and (preview or (ROOT / "project" / "PUBLISH").exists())
@@ -324,7 +330,7 @@ def main():
     for name, text in rendered.items():
         for a in BeautifulSoup(text, "html.parser").find_all("a", href=True):
             h = a["href"]
-            if h.startswith("project/") and has_project:
+            if (h.startswith("project/") and has_project) or h in slide_files:
                 continue
             if not h.startswith(("http", "#", "mailto:", "data:")) and h.split("#")[0] not in built:
                 errors.append(f"{name}: internal link to {h} which is not built")
@@ -354,6 +360,11 @@ def main():
         shutil.rmtree(out / "project")
     if has_project:
         shutil.copytree(ROOT / "project", out / "project", ignore=shutil.ignore_patterns("PUBLISH"))
+    if (out / "slides").exists():                # class slides: only those of sessions on the site
+        shutil.rmtree(out / "slides")
+    for f in slide_files:
+        (out / f).parent.mkdir(exist_ok=True)
+        shutil.copy(ROOT / f, out / f)
     (out / ".nojekyll").write_text("", encoding="utf-8")
     for name, text in rendered.items():
         (out / name).write_text(text, encoding="utf-8", newline="\n")
@@ -367,7 +378,8 @@ def main():
 # ---------------------------------------------------------------- interface copy (not session content)
 INTRO = """<p>One slide deck per session of the politics track of POLISCI 158. Before class, each deck lists what to
 read, listen to, or explore. After class, it adds the key takeaways and places to go further. Decks appear as the
-quarter goes on; use the arrow keys or swipe to move through the slides.</p>"""
+quarter goes on; use the arrow keys or swipe to move through the slides. A session's title opens its class slides;
+the Status column opens its prep deck.</p>"""
 FOOTER_MD = ("Curated by Simone Paci, Stanford University. Drafted with AI assistance (Claude) from the instructor's "
              "course materials and reviewed by the instructor before publication; every external link is checked "
              "before each update.")

@@ -24,3 +24,7 @@ Weekly cycle, per session:
 `build.py` refuses to write when a linked item lacks a `<!-- from: ... -->` provenance comment, when public text cites a restricted source (Canvas-only material, unpublished work, local files), or when template text is left in.
 
 Requires Python 3.9+, pandoc 3.x, beautifulsoup4.
+
+## Slide layout rule
+
+All POLISCI 158 decks vertically center slide content. Set `format.revealjs.center: true` in every Quarto source and preserve `center: true` in published Reveal configuration. Keep footers and slide numbers at the bottom; check all slides for clipping and footer collisions after layout changes.

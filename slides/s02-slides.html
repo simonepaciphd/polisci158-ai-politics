@@ -994,6 +994,11 @@ margin-right: 0; }
 .reveal img.r-stretch { display: block; margin: 0 auto; }
 .reveal .cols-img img { max-height: 470px; width: auto; display: block; margin: 0 auto; }
 </style>
+<style>
+/* Reserve footer clearance while Reveal centers each slide. */
+.reveal .slides section:not(.stack) { padding-bottom: 48px; }
+.reveal .slides section.slide:not(.stack) { height: auto !important; min-height: 0 !important; }
+</style>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -2425,7 +2430,7 @@ window.QuartoSupport = function () {
         disableLayout: false,
 
         // Vertical centering of slides
-        center: false,
+        center: true,
 
         // Enables touch navigation on devices with touch input
         touch: true,

@@ -161,6 +161,7 @@ def to_qmd(s, prev_s, next_s):
     sub = f"Session {s['n']} · {when(m['date'])}" + (f" · {UI['draft_short']}" if m["status"] == "draft" else "")
     head = ["---", f"title: {yq(m['title'])}", f"subtitle: {yq(sub)}", f"author: {yq(COURSE_LINE)}", "lang: en",
             "format:", "  revealjs:", "    theme: [default, theme.scss]", "    slide-number: true",
+            *(["    center: true"] if str(m.get("center", "")).strip().lower() == "true" else []),
             "    scrollable: true", "    link-external-newwindow: true",
             "    hash-type: number", "    controls: true", "    progress: true",
             f"    footer: {yq('Stanford University · [' + UI['back'] + '](index.html)')}",

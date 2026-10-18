@@ -26,14 +26,14 @@ SRC = ROOT / "sessions"
 COURSE_LINE = "POLISCI 158 · AI & Politics · Stanford · Fall 2026"
 SITE_TITLE = "Session guide: the politics track"
 
-# Politics-track sessions of the 158 syllabus (v3): session number -> date. Tech-track sessions are out of scope.
+# Politics-track sessions of the 158 syllabus (v3; v8 moved Supply Side II to Session 11, Wed Oct 28): session number -> date. Tech-track sessions are out of scope.
 SCHEDULE = {1: "2026-09-23", 2: "2026-09-28", 4: "2026-10-05", 6: "2026-10-12", 8: "2026-10-19",
-            10: "2026-10-26", 12: "2026-11-02", 14: "2026-11-09", 16: "2026-11-16"}
+            11: "2026-10-28", 12: "2026-11-02", 14: "2026-11-09", 16: "2026-11-16"}
 TITLES = {1: "Introduction", 2: "Demand Side I: Labor Markets, Productivity, and Automation",
           4: "Demand Side II: Firms, Platforms, and Lobbying",
           6: "Demand Side III: Public Opinion and the Information Environment",
           8: "Supply Side I: Politicians, Campaigns, and Elections",
-          10: "Supply Side II: Public Institutions and Governance Capacity", 12: "Data Centers",
+          11: "Supply Side II: Public Institutions and Governance Capacity", 12: "Data Centers",
           14: "US–China Competition", 16: "AI Sovereignty"}
 STATUSES = ("draft", "prep", "reviewed")
 PUBLIC = ("prep", "reviewed")

@@ -234,6 +234,8 @@ def nav_html(sessions, shown, current=None):
         if s["slug"] in shown:
             cur = ' aria-current="page"' if s["slug"] == current else ""
             items.append(f'<li><a href="{s["slug"]}.html"{cur}>{label}</a></li>')
+        elif (ROOT / "slides" / f'{s["slug"]}-slides.html').exists():
+            items.append(f'<li><a href="slides/{s["slug"]}-slides.html">{label}</a></li>')
         else:
             items.append(f'<li><span class="muted">{label}</span></li>')
     return "<ul>\n" + "\n".join(items) + "\n</ul>"
@@ -307,7 +309,7 @@ def main():
         m, st = s["meta"], s["meta"]["status"]
         title = html.escape(m["title"])
         slides = f'slides/{s["slug"]}-slides.html'   # class slides (speaker notes stripped), optional per session
-        has_slides = s["slug"] in shown_slugs and (ROOT / slides).exists()
+        has_slides = (ROOT / slides).exists()  # approved class deck may precede the prep page
         if has_slides:
             slide_files.append(slides)
         link = (f'<a href="{slides}">{title}</a>' if has_slides

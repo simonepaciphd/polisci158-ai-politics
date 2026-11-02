@@ -28,3 +28,5 @@ Requires Python 3.9+, pandoc 3.x, beautifulsoup4.
 ## Slide layout rule
 
 All POLISCI 158 decks vertically center slide content. Set `format.revealjs.center: true` in every Quarto source and preserve `center: true` in published Reveal configuration. Keep footers and slide numbers at the bottom; check all slides for clipping and footer collisions after layout changes.
+
+Approved class decks in `slides/sNN-slides.html` may publish before the corresponding prep page. Their presence records publication approval; keep unapproved decks outside `slides/`. A draft prep page remains unpublished.

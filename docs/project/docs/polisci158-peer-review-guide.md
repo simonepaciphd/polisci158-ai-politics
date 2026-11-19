@@ -7,12 +7,12 @@ Giving usable feedback is a **course learning goal**, and it's graded (peer revi
 | Review | Due | You review | Length |
 |---|---|---|---|
 | Peer Review 1 | Sun, Oct 18 | One classmate's **proposal** | 150–200 words |
-| Peer Review 2 | Sun, Nov 22 | One classmate's **implementation milestone** | 150–200 words |
-| Peer Review 3 | In session, Nov 30 / Dec 2 | A **panel peer's** presentation | 150–200 words |
+| Peer Review 2 | Wed, Nov 25 | One classmate's **implementation milestone** | 150–200 words |
+| Peer Review 3 | Fri, Dec 4 | One **presentation in your room** | 150–200 words |
 
 If you take the course for 4 units you do any 2 of the 3 reviews; for 3 units, any 1. **You choose which**, and declare them in your proposal (Sun, Oct 11). Once declared, the reviews you chose are required. Peer-review deadlines are firm, and late reviews are not accepted.
 
-**The TAs assign reviewers.** For Peer Review 3, you review a peer on your own panel. If you have a partner, you each write your own reviews. All three reviews use the same rubric, in `docs/polisci158-rubrics.md`.
+**Canvas assigns reviewers at random.** For Peer Review 3, you review one presentation given in your own room (Thornton or Quad), so you see the presentation you review. If you have a partner, you each write your own reviews. All three reviews use the same rubric, in `docs/polisci158-rubrics.md`.
 
 ## What usable feedback looks like
 

@@ -35,9 +35,9 @@ Deadlines are 11:59 p.m. unless stated.
 | **Proposal milestone** | Sun, Oct 11 | Motivate the project; explain feasibility (plus a work-sharing contract if you have a partner) | 300–500 words |
 | Peer Review 1 | Sun, Oct 18 | Written feedback on one classmate's proposal | 150–200 words |
 | **Implementation milestone** | Sun, Nov 15 | Design and evidence progress: what has *actually* been done | 800–1000 words |
-| Peer Review 2 | Sun, Nov 22 | Written feedback on one classmate's milestone | 150–200 words |
+| Peer Review 2 | Wed, Nov 25 | Written feedback on one classmate's milestone | 150–200 words |
 | **Final presentation** | Mon, Nov 30 / Wed, Dec 2 | Themed panel presentation and Q&A | 5 minutes; about 5–7 slides |
-| Peer Review 3 | In session, Nov 30 / Dec 2 | Structured feedback on a panel peer | 150–200 words |
+| Peer Review 3 | Fri, Dec 4 | Written feedback on one presentation in your room | 150–200 words |
 | **Final submission** | Finals week (exact date on Canvas) | All components integrated, plus attachments | 2000–3000 words |
 
 Deadlines for the final presentations and the peer reviews are firm; late submissions will not be accepted. Other late work loses 0.5 points from the final course grade per day late.

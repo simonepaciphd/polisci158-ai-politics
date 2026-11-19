@@ -73,4 +73,4 @@ With a partner, both of you present for about the same time, and the presentatio
 | **Main concern** | The *one* issue that most threatens the project, explained clearly | A real issue, but not the most important, or a list of small points | No substantive concern, or taste presented as a flaw |
 | **Suggestion** | A concrete step the author can take before the next deadline | Suggestion vague | None |
 
-All three peer reviews, including Peer Review 3 in session, use this rubric.
+All three peer reviews, including Peer Review 3, use this rubric.
